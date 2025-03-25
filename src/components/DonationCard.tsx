@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -41,6 +41,7 @@ const DonationCard = ({ post }: DonationCardProps) => {
   const [comment, setComment] = useState("");
   const [donationAmount, setDonationAmount] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -57,6 +58,7 @@ const DonationCard = ({ post }: DonationCardProps) => {
 
   const handleDonation = async () => {
     if (!user) {
+      navigate("/login");
       toast.error("Please log in to donate");
       return;
     }
@@ -132,6 +134,7 @@ const DonationCard = ({ post }: DonationCardProps) => {
 
   const handleSubmitComment = async () => {
     if (!user) {
+      navigate("/login");
       toast.error("Please log in to comment");
       return;
     }
@@ -252,14 +255,14 @@ const DonationCard = ({ post }: DonationCardProps) => {
           </DialogContent>
         </Dialog>
 
-        <Button
+        {/* <Button
           variant="ghost"
           size="sm"
           onClick={() => setShowComments(!showComments)}
         >
           <MessageCircle className="h-4 w-4 mr-1" />
           Comments
-        </Button>
+        </Button> */}
       </CardFooter>
 
       {showComments && (
