@@ -1,0 +1,118 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 10% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 20%;
+
+    --primary: 35 94% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 5% 95%;
+    --secondary-foreground: 220 10% 20%;
+
+    --muted: 220 5% 95%;
+    --muted-foreground: 220 5% 40%;
+
+    --accent: 35 94% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 35 94% 56%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 35 94% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 35 94% 56%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 0 0% 93%;
+
+    --card: 220 20% 13%;
+    --card-foreground: 0 0% 93%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 93%;
+
+    --primary: 35 94% 56%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 220 20% 16%;
+    --secondary-foreground: 0 0% 93%;
+
+    --muted: 220 20% 16%;
+    --muted-foreground: 220 10% 70%;
+
+    --accent: 35 94% 56%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 93%;
+
+    --border: 220 20% 16%;
+    --input: 220 20% 16%;
+    --ring: 35 94% 56%;
+
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 0 0% 93%;
+    --sidebar-primary: 35 94% 56%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 20% 16%;
+    --sidebar-accent-foreground: 0 0% 93%;
+    --sidebar-border: 220 20% 16%;
+    --sidebar-ring: 35 94% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:scale-[1.01] hover:-translate-y-1;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 dark:bg-card/80 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-sm;
+  }
+
+  .nav-icon {
+    @apply w-6 h-6 mx-auto;
+  }
+
+  .nav-text {
+    @apply text-xs font-medium;
+  }
+
+  .donation-button {
+    @apply bg-amber-light text-black font-medium py-1.5 px-4 rounded-full flex items-center gap-1.5 text-sm transition-all hover:bg-amber hover:shadow-md;
+  }
+}
