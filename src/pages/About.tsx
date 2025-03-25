@@ -84,7 +84,7 @@ const About = () => {
                 size="lg"
                 className="bg-amber text-black hover:bg-amber-dark animate-fade-in"
               >
-                <Link to="/donations">Donate Now</Link>
+                <Link to="/">Donate Now</Link>
               </Button>
               {/* <Button
                 asChild
@@ -253,11 +253,11 @@ const About = () => {
               size="lg"
               className="bg-amber text-black hover:bg-amber-dark"
             >
-              <Link to="/donations">Donate Now</Link>
+              <Link to="/">Donate Now</Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            {/* <Button asChild variant="outline" size="lg">
               <Link to="/donations/new">Start a Campaign</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
